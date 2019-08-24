@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="40dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/txtWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="Register As \na Tutor or Student or \Both.. "
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/eUserName"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="NAME" />
+
+                <EditText
+                    android:id="@+id/eEmail"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="EMAIL" />
+
+                <EditText
+                    android:id="@+id/ePassword"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/eConfirmPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="CONFIRM PASSWORD"
+                    android:inputType="textPassword" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rButtonTutor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Tutor"
+                            android:textColor="@color/green"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rButtonStudent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Student"
+                            android:textColor="@color/green"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/rButtonBoth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Both"
+                            android:textColor="@color/green"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/ePhone"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="phone"
+                    android:hint="CONTACT NUMBER" />
+
+
+                <EditText
+                    android:id="@+id/eLocation"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="LOCATION" />
+
+                <EditText
+                    android:id="@+id/eExperience"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_sentiment_satisfied_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="EXPERIENCE" />
+
+                <EditText
+                    android:id="@+id/eTags"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="EXPERTISE " />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonstyle2"
+                    android:text="Join The Club"
+                    android:textColor="@color/green"
+                    android:layout_marginBottom="20dp"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
